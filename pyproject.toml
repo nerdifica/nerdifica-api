@@ -1,0 +1,18 @@
+[project]
+name = "nerdifica-api"
+version = "0.1.0"
+requires-python = ">=3.12"
+dependencies = [
+  "fastapi>=0.115",
+  "uvicorn[standard]>=0.32",
+  "pydantic-settings>=2.6",
+]
+
+[project.optional-dependencies]
+test = [
+  "pytest>=8",
+  "httpx>=0.27",
+]
+
+[tool.setuptools.packages.find]
+where = ["src"]
